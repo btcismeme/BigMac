@@ -33,6 +33,7 @@ Unlock schedule approaching?  →  pump incentive
 | 11 | [Take-Profit Discipline (adapted from stocks)](11-take-profit-discipline.md) | HIGH | Adapted |
 | 12 | [Manipulator Tape / Pump-Dump (adapted from stocks)](12-manipulator-tape.md) | HIGH | Adapted |
 | 13 | [KOL / Social Media Bias (adapted from stocks)](13-kol-social-bias.md) | MEDIUM | Adapted |
+| 14 | [Liquidation Heatmap Shows Targets, Not Guarantees](14-liquidation-heatmap-trap.md) | HIGH | Squeeze Identification |
 
 ---
 
