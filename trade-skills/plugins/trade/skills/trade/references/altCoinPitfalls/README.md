@@ -34,6 +34,7 @@ Unlock schedule approaching?  →  pump incentive
 | 12 | [Manipulator Tape / Pump-Dump (adapted from stocks)](12-manipulator-tape.md) | HIGH | Adapted |
 | 13 | [KOL / Social Media Bias (adapted from stocks)](13-kol-social-bias.md) | MEDIUM | Adapted |
 | 14 | [Liquidation Heatmap Shows Targets, Not Guarantees](14-liquidation-heatmap-trap.md) | HIGH | Squeeze Identification |
+| 15 | [Large CEX Outflow to Cold/Unknown Wallets is a Pre-Pump Signal](15-cex-outflow-signal.md) | HIGH | On-Chain Signal |
 
 ---
 
@@ -46,6 +47,8 @@ Unlock schedule approaching?  →  pump incentive
 | Smart Money (聪明钱) | Binance | Positions > $10M threshold |
 | Unlock Schedule | CoinGlass / Token Unlocks | Token-specific vesting calendar |
 | Spot Price | Binance / CoinGecko | Fallback chain: Binance → Bybit → Kraken → CoinGecko |
+| CEX Outflow / Exchange Reserve | CoinGlass (on-chain tab), Glassnode | Negative netflow = outflow = bullish supply squeeze |
+| Whale Wallet Alerts | Twitter: @whale_alert, @lookonchain | Real-time large transfer notifications; search `$TOKEN from Binance` |
 
 > **Binance API Note**: Binance is geo-blocked from US IPs (HTTP 451). Always send a notification and switch VPN before querying Binance data endpoints.
 
