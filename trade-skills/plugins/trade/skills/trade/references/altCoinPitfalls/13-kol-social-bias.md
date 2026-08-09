@@ -31,6 +31,16 @@ This cycle is so common it has a name in CT: "pump and dump via KOL narrative." 
 - **Check if KOL has a referral code or affiliate deal** with the exchange/project: financial incentive to shill
 - **Useful KOLs for altcoin squeeze**: those who provide raw on-chain data (OI/MC, L/S ratios, funding rates) rather than price targets or narratives — data over opinion
 
+**Trusted KOL watchlist** — if all three of these accounts mention the same token, treat it as a signal worth investigating:
+
+| KOL | Twitter | Why trusted |
+|-----|---------|-------------|
+| sss_crypto | [@sss_crypto](https://x.com/sss_crypto) | on-chain / squeeze data focus |
+| Arya | [@Arya_web3](https://x.com/Arya_web3) | on-chain / squeeze data focus |
+| luge517 | [@luge517](https://x.com/luge517) | on-chain / squeeze data focus |
+
+**Rule**: A single KOL mention = n=1, noise. All **3 independently mentioning the same token** = corroborating signal, escalate to full checklist (OI/MC, L/S ratio, EMA20, CEX outflow). These 3 are also useful sources for finding CEX outflow data — they frequently post wallet transfer alerts and on-chain context alongside their token calls.
+
 **Cross-reference**: Use KOL information as a third or fourth layer, after tape (OI/MC, L/S ratio, EMA20) and smart money signals.
 
 Reference: `../pitfalls/14-channel-check-sample-bias.md` (original stock version).

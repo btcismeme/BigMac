@@ -49,6 +49,7 @@ Unlock schedule approaching?  →  pump incentive
 | Spot Price | Binance / CoinGecko | Fallback chain: Binance → Bybit → Kraken → CoinGecko |
 | CEX Outflow / Exchange Reserve | CoinGlass (on-chain tab), Glassnode | Negative netflow = outflow = bullish supply squeeze |
 | Whale Wallet Alerts | Twitter: @whale_alert, @lookonchain | Real-time large transfer notifications; search `$TOKEN from Binance` |
+| Trusted KOL watchlist | [@sss_crypto](https://x.com/sss_crypto), [@Arya_web3](https://x.com/Arya_web3), [@luge517](https://x.com/luge517) | If all 3 mention the same token → escalate to full checklist |
 
 > **Binance API Note**: Binance is geo-blocked from US IPs (HTTP 451). Always send a notification and switch VPN before querying Binance data endpoints.
 

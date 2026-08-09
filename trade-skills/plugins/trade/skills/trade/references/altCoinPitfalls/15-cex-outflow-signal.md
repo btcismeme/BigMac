@@ -44,7 +44,13 @@ This signal is most useful when it is **abnormally large relative to normal dail
 
 **Data source**:
 - **Twitter/X**: search `$TOKEN exchange outflow`, `$TOKEN from Binance`, `$TOKEN whale withdrawal` — real-time alert accounts post these automatically
+- **Trusted KOL sources** — these 3 KOLs regularly post CEX outflow alerts and on-chain wallet transfer data; if they're all talking about the same token, it's worth a full checklist:
+  - [@sss_crypto](https://x.com/sss_crypto)
+  - [@Arya_web3](https://x.com/Arya_web3)
+  - [@luge517](https://x.com/luge517)
 - **Whale Alert** (@whale_alert on Twitter): posts all transfers >$1M automatically; filter by token
 - **Lookonchain** (@lookonchain on Twitter): tracks smart money wallets and identifies when known accumulators move tokens off exchange
 - **CoinGlass** → token page → on-chain tab → Exchange Netflow (negative = outflow, bullish)
 - **Glassnode** (paid): exchange reserve chart per token — shows long-term trend of supply on exchanges
+
+See also: `13-kol-social-bias.md` — trusted KOL watchlist and the "all 3 = signal" rule.
