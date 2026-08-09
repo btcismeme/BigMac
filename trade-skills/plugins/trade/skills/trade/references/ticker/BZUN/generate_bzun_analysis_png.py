@@ -27,6 +27,24 @@ LGOLD   = (243, 210, 80)
 img  = Image.new("RGB", (W, H), BG)
 draw = ImageDraw.Draw(img)
 
+def add_watermark(base_img, wm="@offermemoneyXYZ"):
+    """Tile semi-transparent diagonal watermark across full image."""
+    base = base_img.convert("RGBA")
+    iw, ih = base.size
+    diag = int((iw * iw + ih * ih) ** 0.5) + 200
+    canvas = Image.new("RGBA", (diag, diag), (0, 0, 0, 0))
+    cdraw  = ImageDraw.Draw(canvas)
+    wfont  = _font(24)
+    tw = int(cdraw.textlength(wm, font=wfont)) + 40
+    for cy in range(0, diag, 190):
+        for cx in range(-tw, diag, tw + 60):
+            cdraw.text((cx, cy), wm, font=wfont, fill=(200, 200, 200, 30))
+    rotated = canvas.rotate(30, expand=False)
+    rx = (diag - iw) // 2
+    ry = (diag - ih) // 2
+    overlay = rotated.crop((rx, ry, rx + iw, ry + ih))
+    return Image.alpha_composite(base, overlay).convert("RGB")
+
 def _font(size, bold=False):
     for path in [
         "/System/Library/Fonts/PingFang.ttc",
@@ -355,11 +373,12 @@ y += 152
 # ── Footer ────────────────────────────────────────────────────────────────────
 hline(y, color=GRAY)
 y += 12
-text(f"@offermemoneyXYZ  |  数据来源: stockanalysis.com · gurufocus.com  |  生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M')}  |  仅供参考，不构成投资建议",
+text(f"数据来源: stockanalysis.com · gurufocus.com  |  生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M')}  |  仅供参考，不构成投资建议",
      PAD, y, F_TINY, GRAY)
 y += 30
 
 img = img.crop((0, 0, W, min(y + 20, H)))
+img = add_watermark(img)
 img.save(OUT_FILE, "PNG", dpi=(144, 144))
 print(f"✓ Saved: {OUT_FILE}")
 print(f"  Size: {img.size[0]}×{img.size[1]} px")
