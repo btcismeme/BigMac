@@ -305,7 +305,7 @@ y += 136
 # ── Footer ────────────────────────────────────────────────────────────────────
 hline(y, color=GRAY)
 y += 12
-text(f"数据来源: stockanalysis.com / Yahoo Finance  |  生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M')}  |  仅供参考，不构成投资建议", PAD, y, F_TINY, GRAY)
+text(f"@offermemoneyXYZ  |  数据来源: stockanalysis.com / Yahoo Finance  |  生成时间: {datetime.now().strftime('%Y-%m-%d %H:%M')}  |  仅供参考，不构成投资建议", PAD, y, F_TINY, GRAY)
 y += 30
 
 # ── Crop to actual content height ────────────────────────────────────────────

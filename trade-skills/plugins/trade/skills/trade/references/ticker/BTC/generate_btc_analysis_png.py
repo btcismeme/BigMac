@@ -380,7 +380,7 @@ y += 154
 
 # Footer
 hline(y, color=GRAY); y+=12
-text(f"数据: CoinGecko · Kraken · TheBlock  |  {datetime.now().strftime('%Y-%m-%d %H:%M')}  |  仅供参考，不构成投资建议",
+text(f"@offermemoneyXYZ  |  数据: CoinGecko · Kraken · TheBlock  |  {datetime.now().strftime('%Y-%m-%d %H:%M')}  |  仅供参考，不构成投资建议",
      PAD, y, F_TINY, GRAY)
 y+=30
 
