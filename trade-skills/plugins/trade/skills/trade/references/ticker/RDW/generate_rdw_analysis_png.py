@@ -328,7 +328,6 @@ y += 30
 
 # ── Crop to actual content height ────────────────────────────────────────────
 img = img.crop((0, 0, W, min(y + 20, H)))
-img = add_watermark(img)
-img.save(OUT_FILE, "PNG", dpi=(144, 144))
+img = add_watermark(img)img = img.resize((img.width * 2, img.height * 2), Image.Resampling.LANCZOS)img.save(OUT_FILE, "PNG", dpi=(144, 144))
 print(f"✓ Saved: {OUT_FILE}")
 print(f"  Size: {img.size[0]}×{img.size[1]} px")
