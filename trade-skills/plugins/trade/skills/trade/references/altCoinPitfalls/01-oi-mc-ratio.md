@@ -21,6 +21,7 @@ When the total perpetual open interest (OI) in USD approaches or exceeds the tok
   - OI/MC 0.5–1.0 → high squeeze potential, add to watch list
   - OI/MC > 1.0 → extreme — treat as squeeze candidate until proven otherwise
 - Combine with Long/Short ratio (pitfall #03) and Smart Money signal (pitfall #04) before sizing in
-- Check across multiple exchanges (Binance, Bybit, OKX) — CoinGlass aggregates all; single-exchange OI can be misleading
+- **Always use CoinGlass for OI, never Binance API alone** — the Binance `openInterest` endpoint only returns Binance's own exchange OI. For many altcoins, Binance represents only 25–40% of total perp OI; the rest is on Bybit, OKX, Gate.io, etc. Using Binance-only OI will severely understate the true OI/MC ratio.
+  - Example (TUT, Aug 8 2026): Binance API returned ~$60M OI; CoinGlass aggregate showed $210M — a 3.5× undercount that changed OI/MC from 0.51 to **1.75**
 
-**Data source**: [CoinGlass](https://www.coinglass.com) → search token → "Open Interest" panel → compare to Market Cap shown on same page.
+**Data source**: [CoinGlass](https://www.coinglass.com) → search token → header panel shows 持仓 (OI) and 市值 (MC) side by side. Use these numbers directly — they are already aggregated across all exchanges.
