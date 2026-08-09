@@ -9,7 +9,7 @@ tags: liquidation, heatmap, coinglass, market-maker, trap
 
 **Severity: HIGH — Liquidation clusters are visible to everyone, including the market maker who may have placed those shorts deliberately.**
 
-CoinGlass displays a **liquidation heatmap** that shows where large clusters of leveraged positions would be liquidated at various price levels. A large short liquidation cluster at a price significantly above current market (e.g., $1M+ notional) is a potential target: the market maker has a financial incentive to pump price to that level, triggering those liquidations and collecting the liquidated collateral. However, this signal has a critical trap: the market maker may have **placed those short positions themselves** as a future exit mechanism — pumping to the liquidation level, then allowing price to crash back down while the maker profits on both legs.
+CoinGlass displays a **liquidation heatmap** that shows where clusters of leveraged positions would be liquidated at various price levels. A **significant** short liquidation cluster at a price above current market is a potential target: the market maker has a financial incentive to pump price to that level, triggering those liquidations and collecting the liquidated collateral. "Significant" is relative — judge it against the token's normal liquidation activity, not an absolute dollar number. However, this signal has a critical trap: the market maker may have **placed those short positions themselves** as a future exit mechanism — pumping to the liquidation level, then allowing price to crash back down while the maker profits on both legs.
 
 **Why it matters**: Liquidation maps are public information. In an efficient manipulation game, the market maker controls both sides:
 - **Before dump**: maker creates large apparent short exposure at elevated prices (visibly "juicy" for squeeze plays)
@@ -45,4 +45,4 @@ Phase 2: maker pumps to liquidation level
 
 **Practical rule**: Use liquidation heatmap as **one signal among many**, never as the primary entry trigger. If the liquidation cluster is the *only* reason to enter, do not enter. If it confirms 3+ other squeeze signals (OI/MC, L/S ratio, smart money, EMA20 structure), treat it as a secondary confirmation.
 
-**Data source**: [CoinGlass](https://www.coinglass.com) → token → "Liquidation Heatmap" tab. The heatmap shows notional USD value of positions that would be liquidated at each price level. Focus on clusters > $1M for altcoins, > $10M for large-cap crypto.
+**Data source**: [CoinGlass](https://www.coinglass.com) → token → "Liquidation Heatmap" tab. The heatmap shows notional USD value of positions that would be liquidated at each price level. Look for clusters that stand out visually as **abnormally large relative to the surrounding heatmap density** — the significance threshold is token-specific, not a fixed dollar amount.
