@@ -25,3 +25,5 @@ When the total perpetual open interest (OI) in USD approaches or exceeds the tok
   - Example (TUT, Aug 8 2026): Binance API returned ~$60M OI; CoinGlass aggregate showed $210M — a 3.5× undercount that changed OI/MC from 0.51 to **1.75**
 
 **Data source**: [CoinGlass](https://www.coinglass.com) → search token → header panel shows 持仓 (OI) and 市值 (MC) side by side. Use these numbers directly — they are already aggregated across all exchanges.
+
+Reference: `../cryptoTicker/TUT/tut-2026-08.md` — TUT Aug 8 2026: CoinGlass showed 持仓 $210M vs MC $120M → OI/MC = **1.75**. Binance-only API returned only $60M OI (just 29% of total), giving a falsely low ratio of 0.51. Using Binance alone would have caused a 3.5× underestimate of squeeze pressure.

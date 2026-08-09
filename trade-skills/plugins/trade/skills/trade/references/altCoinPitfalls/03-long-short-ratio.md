@@ -31,4 +31,11 @@ Binance provides three distinct L/S metrics that measure different things. For a
 
 > **⚠️ VPN REQUIRED**: Binance API is geo-blocked from US IPs (HTTP 451 / 403). Send a notification before querying — switch VPN to a non-US endpoint first, then query `https://fapi.binance.com/futures/data/globalLongShortAccountRatio` or the equivalent web UI.
 
+Reference: `../cryptoTicker/TUT/tut-2026-08.md` — TUT Aug 8 2026 (peak of +234% squeeze day):
+- 多空比人数: **0.48** → 67% of accounts were short
+- 大户账户比: **0.41** → 71% of large accounts were short by count
+- 大户持仓比: **1.33** → but by position size, whales were 57% long
+
+Perfect example of the opposing reading: most accounts (including large ones) chose short, but the largest *individual* positions were on the long side. These long whales pumped price, liquidating the majority of short accounts.
+
 **Data source**: Binance Futures → token pair (e.g., TOKENUSDT) → "Data" tab → Long/Short Ratio. Or via API: `GET /futures/data/globalLongShortAccountRatio?symbol=TOKENUSDT&period=4h`.

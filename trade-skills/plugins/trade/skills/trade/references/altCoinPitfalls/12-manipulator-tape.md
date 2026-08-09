@@ -29,3 +29,5 @@ Adapted from stock pitfall #12. A squeeze altcoin is not a "market" — it is a 
 | Jade Lizard / Iron Condor | Scale-out long + trail stop |
 
 Reference: `../pitfalls/12-manipulator-tape.md` (original stock version).
+
+Reference: `../cryptoTicker/TUT/tut-2026-08.md` — TUT Aug 8 2026: futures volume $1.86B vs spot volume $163M = **11.4:1 ratio**. The price action was 92% derivatives-driven — essentially every meaningful bid and ask was a leveraged perp contract, not a spot buyer expressing a fundamental view. Large-position top traders were net long (持仓比 1.33) while the majority of accounts were short (多空比人数 0.48). Textbook orchestrated pump: whales long, retail short, mechanical liquidation cascade does the work.

@@ -23,4 +23,6 @@ Even though most technical analysis is invalid during a squeeze (pitfall #06), t
 - **For exit signal**: 2 consecutive daily closes below EMA20 is a strong signal to exit and reassess
 - Do NOT use EMA50 or EMA100 as the primary reference — EMA20 is the correct one for squeeze dynamics
 
-**Note**: During the most violent pump phases of a squeeze, price can be 40–80% above EMA20. This is normal. The EMA20 is not a reversal signal when price is above it — it is an anchor.
+**Note**: During the most violent pump phases of a squeeze, price can be 40–80% above EMA20 — or more. The EMA20 is not a reversal signal when price is above it — it is an anchor.
+
+Reference: `../cryptoTicker/TUT/tut-2026-08.md` — TUT Aug 8-9 2026: 4H EMA20 = $0.066 while price reached $0.155 — **+135% above EMA20**. Yet every single 4H candle from Aug 8 onward closed above EMA20. The Aug 9 intraday low touched $0.096 (a -25% wick) but the 4H candle closed well above EMA20. This is the classic squeeze wash: violent wick, EMA20 holds as floor, squeeze continues.

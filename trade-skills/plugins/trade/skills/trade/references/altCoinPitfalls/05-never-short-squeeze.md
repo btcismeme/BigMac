@@ -33,3 +33,5 @@ When a token shows squeeze characteristics (high OI/MC, low 多空比人数, ris
 - Moving from long to flat is NOT the same as going short
 
 > The correct position when uncertain about a squeeze altcoin is **flat**. Never short.
+
+Reference: `../cryptoTicker/TUT/tut-2026-08.md` — TUT Aug 8 2026: price moved from $0.039 open to $0.117 high in a single day (+200%), then continued to $0.155 the next session. At every stage — $0.05, $0.07, $0.09, $0.11 — RSI was "overbought," chart looked "parabolic," and the move seemed "done." Shorting at $0.07 with 3x leverage (liq at $0.047) would have survived 4H before liquidation. Shorting at $0.09 (liq at $0.060) would have been liquidated within 2 candles. The squeeze didn't care about any technical level.

@@ -28,3 +28,10 @@ Adapted from stock pitfall #13. In altcoins, the pump-dump cycle is compressed: 
 **Resist the narrative**: "It's going to $X, I should hold." In a squeeze, the narrative is always most bullish at the top. Take profit mechanically, not narratively.
 
 Reference: `../pitfalls/13-take-profit-discipline.md` (original stock version).
+
+Reference: `../cryptoTicker/TUT/tut-2026-08.md` — TUT Aug 7-9 2026: optimal scale-out from an Aug 7 entry at ~$0.039:
+- +50% at $0.059 → scale 1/3 out (Aug 8 morning, within 12H of entry)
+- +100% at $0.078 → scale another 1/3 out (Aug 8 afternoon)
+- Remaining 1/3 → trail stop at 4H EMA20 ($0.066 → $0.155+ as price extended)
+
+Anyone who "waited for the full target" and didn't take profit at $0.078 was exposed to the full retracement risk if the squeeze ended. The squeeze eventually reached $0.155+ — but waiting is not a replicable strategy when the position can reverse -50% in hours.

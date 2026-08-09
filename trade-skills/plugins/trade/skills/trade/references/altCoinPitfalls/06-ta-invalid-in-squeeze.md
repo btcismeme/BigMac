@@ -36,3 +36,5 @@ Traditional technical analysis (support/resistance, RSI, MACD, Fibonacci, chart 
 3. Smart money positioning (pitfall #04)
 4. EMA20 on 4H/Daily (pitfall #07)
 5. Funding rate level and direction
+
+Reference: `../cryptoTicker/TUT/tut-2026-08.md` — TUT Aug 8 2026: futures volume was $1.86B vs spot volume $163M — an **11:1 ratio**. Over 90% of all price-moving activity was derivatives (perp swaps), not real spot buying. Every standard TA level — support, resistance, trend lines, RSI — was set by prior spot price action that was now irrelevant. The price was being mechanically moved by liquidation cascades, not by any organic market participant respecting technical levels.

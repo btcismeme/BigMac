@@ -34,3 +34,5 @@ This cycle is so common it has a name in CT: "pump and dump via KOL narrative." 
 **Cross-reference**: Use KOL information as a third or fourth layer, after tape (OI/MC, L/S ratio, EMA20) and smart money signals.
 
 Reference: `../pitfalls/14-channel-check-sample-bias.md` (original stock version).
+
+Reference: `../cryptoTicker/TUT/tut-2026-08.md` — TUT Aug 8-9 2026: after +234% on Aug 8, CT (Crypto Twitter) will be saturated with TUT bulls by Aug 9 morning. Anyone reading those posts and entering is: (a) entering at 10x from the base, (b) near ATH, (c) after the whales have already pumped. The KOL excitement at this stage is a distribution signal — whales are selling into the narrative-driven retail FOMO, not buying alongside it.
