@@ -10,7 +10,7 @@ A personal workspace for options trading skill development — built around a Cl
 
 A Claude Code plugin containing one core skill: **`trade`** — a multi-layer options trading framework covering:
 
-- **21 pitfall rules** — common traps in options trading (IV crush, manipulator tape, consensus bias, dealer flow misreads, etc.)
+- **32 pitfall rules** — stock/options pitfall rules sourced from the [`upstream/trade-skills`](upstream/trade-skills) submodule (himself65/trade-skills) via a symlink at `references/pitfalls/`
 - **12 ticker case studies** — real trade arcs documented with setup, structure evolution, outcome, and reusable frameworks (INTC, MAG7, APP, NOK, TSEM, CBRS, RDW, ASTS, BZUN, SNDK, MU, BTC)
 - **4 reference frameworks** — gamma/GEX, price-action microstructure, strategies, and pitfall index
 - **Analysis scripts** — per-ticker Python scripts that generate dark-theme Chinese-language PNG reports, live data fetchers (CoinGecko, Kraken, Twitter KOL), and HTML report generators
@@ -26,7 +26,7 @@ trade-skills/
     │   ├── strategies.md
     │   ├── gamma-framework.md
     │   ├── price-action-framework.md
-    │   ├── pitfalls/             ← 21 numbered pitfall files + README index
+    │   ├── pitfalls/             ← symlink → upstream/trade-skills/.../pitfalls (32 rules)
     │   └── ticker/               ← per-ticker subfolders (case study + scripts + PNGs)
     │       ├── ASTS/
     │       ├── BTC/
@@ -40,9 +40,9 @@ trade-skills/
 
 The `trade-skills/` plugin structure and Claude Code marketplace convention are forked from and inspired by:
 
-**[himself65/trade-skills](https://github.com/himself65/trade-skills)** — original plugin scaffold, `plugin.json` layout, and skill loader pattern.
+**[himself65/trade-skills](https://github.com/himself65/trade-skills)** — original plugin scaffold, `plugin.json` layout, and skill loader pattern. Also included as a **git submodule** at `upstream/trade-skills`; the stock pitfall rules (`references/pitfalls/`) are a symlink into this submodule so upstream updates flow in via `git submodule update`.
 
-All trading content, case studies, pitfall rules, analysis frameworks, and Python scripts are original additions built on top of that foundation.
+All trading content, case studies, analysis frameworks, and Python scripts are original additions built on top of that foundation.
 
 ## Usage
 

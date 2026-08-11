@@ -1,0 +1,3 @@
+[submodule "upstream/trade-skills"]
+	path = upstream/trade-skills
+	url = https://github.com/himself65/trade-skills
